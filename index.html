@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Store</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.0.0-beta2-web/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <section class="top">
+        <div class="top-mail">
+          <a href="#"><i class="far fa-envelope"></i></a>
+          <p>Hello@colorlib.com</p>
+        </div>
+        <div>
+          <p>Free Shipping for all order of $99</p>
+        </div>
+        <div class="top-icons">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </section>
+      <section class="logo">
+        <div class="logo-center center">
+          <div class="logo-left">
+            <img src="./images/fruit logo.png" alt="logo image" />
+            <form action="" class="logo-form">
+              <div class="location">
+                <label for="location"
+                  ><i class="fas fa-map-marker-alt"></i
+                ></label>
+                <select name="" id="location">
+                  <option value="Gurugram">Gurugram</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Bangalore">Bangalore</option>
+                </select>
+              </div>
+              <div class="search">
+                <label for="search"><i class="fas fa-search"></i></label>
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="Search for products..."
+                />
+              </div>
+            </form>
+          </div>
+          <div class="logo-right">
+            <div class="phone-number">
+              <i class="fas fa-phone-volume"></i>
+              <a href="#">1800-000-000</a>
+            </div>
+            <div class="logo-like">
+              <a href="#" class="heart-btn"
+                ><i class="far fa-heart"><p class="heart-count">3</p></i></a
+              >
+            </div>
+            <div class="profile">
+              <form action="">
+                <label for="profile"><i class="far fa-user"></i></label>
+                <select name="" id="profile">
+                  <option value="john-doe">john doe</option>
+                  <option value="log-out">log out</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <nav class="navbar">
+        <section class="navbar-center center">
+          <div class="nav-left">
+            <a href="#" class="categories">
+              <i class="fas fa-bars"></i>
+              <h2>Select Categories</h2>
+            </a>
+            <div class="nav-list">
+              <a href="#" class="home-page">home</a>
+              <a href="#">product</a>
+              <a href="#">stores</a>
+              <a href="#">contact</a>
+            </div>
+          </div>
+
+          <div class="nav-right">
+            <form action="">
+              <label for="cart"><i class="fas fa-shopping-cart"></i></label>
+              <select name="cart number" id="cart">
+                <option value="cart 2">cart 2</option>
+                <option value="cart 3">cart 3</option>
+                <option value="cart 4">cart 4</option>
+                <option value="cart 5">cart 5</option>
+              </select>
+            </form>
+          </div>
+        </section>
+      </nav>
+    </div>
+    <section class="hero-cards center">
+      <!--single card-->
+      <div class="single-card">
+        <img src="./images/hero-card 1.png" alt="image" />
+        <div class="discount-card">
+          <h2>6% off</h2>
+          <h1>buy more & save more</h1>
+          <p>beverage</p>
+        </div>
+        <a href="#" class="shop-btn">Shop now</a>
+      </div>
+      <!--end of single card-->
+
+      <!--single card-->
+      <div class="single-card middle-card">
+        <img src="./images/hero-card-2.png" alt="image" />
+        <div class="discount-card">
+          <h2>10% off</h2>
+          <h1>buy more & save more</h1>
+          <p>nuts & snacks</p>
+        </div>
+        <a href="#" class="shop-btn">Shop now</a>
+      </div>
+      <!--end of single card-->
+
+      <!--single card-->
+      <div class="single-card middle-card">
+        <img src="./images/hero-card-3.png" alt="image" />
+        <div class="discount-card">
+          <h2>6% off</h2>
+          <h1>buy more & save more</h1>
+          <p>fresh vegetables</p>
+        </div>
+        <a href="#" class="shop-btn">Shop now</a>
+      </div>
+      <!--end of single card-->
+
+      <!--single card-->
+      <div class="single-card middle-card">
+        <img src="./images/hero-card-4.png" alt="image" />
+        <div class="discount-card">
+          <h2>25% off</h2>
+          <h1>buy more & save more</h1>
+          <p>fresh fruit</p>
+        </div>
+        <a href="#" class="shop-btn">Shop now</a>
+      </div>
+      <!--end of single card-->
+
+      <!--single card-->
+      <div class="single-card">
+        <img src="./images/hero-card-5.png" alt="image" />
+        <div class="discount-card">
+          <h2>15% off</h2>
+          <h1>buy more & save more</h1>
+          <p>eggs & diary</p>
+        </div>
+        <a href="#" class="shop-btn">Shop now</a>
+      </div>
+      <!--end of single card-->
+    </section>
+    <section class="category-cards">
+      <section class="center">
+        <div class="section-title">
+          <h2>shop by</h2>
+          <h1>categories</h1>
+        </div>
+        <div class="c-cards">
+          <!--single card-->
+          <span class="first-card">
+            <img src="./images/categories/cat-1.png" alt="" />
+            <a href="#">Vegetables & Fruits</a>
+            <button><i class="fas fa-chevron-right"></i></button>
+          </span>
+          <!--end of single card-->
+          <!--single card-->
+          <span>
+            <img src="./images/categories/cat-2.png" alt="" />
+            <a href="#">Grocery & Staples</a>
+          </span>
+          <!--end of single card-->
+          <!--single card-->
+          <span>
+            <img src="./images/categories/cat-3.png" alt="" />
+            <a href="#">Dairy & Eggs</a>
+          </span>
+          <!--end of single card-->
+          <!--single card-->
+          <span>
+            <img src="./images/categories/cat-4.png" alt="" />
+            <a href="#">Beverages</a>
+          </span>
+          <!--end of single card-->
+          <!--single card-->
+          <span>
+            <img src="./images/categories/cat-5.png" alt="" />
+            <a href="#">Snacks</a>
+          </span>
+          <!--end of single card-->
+          <!--single card-->
+          <span class="last-card">
+            <img src="./images/categories/cat-6.png" alt="" />
+            <a href="#">Home Care</a>
+            <button><i class="fas fa-chevron-right"></i></button>
+          </span>
+          <!--end of single card-->
+        </div>
+      </section>
+    </section>
+    <section class="top-products center">
+      <div class="section-title">
+        <h2>for you</h2>
+        <h1>top featured products</h1>
+      </div>
+      <div class="top-product-cards">
+        <!--single card-->
+        <div class="card first-card">
+          <div class="card-top">
+            <h4>15% off</h4>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="card-img">
+            <img src="./images/top-products/img-1.png" alt="no image" />
+          </div>
+          <div class="card-info">
+            <p>Available(in stock)</p>
+            <h2>Fresh organic apricot</h2>
+            <h3>$12 <span>$15</span></h3>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <a href="#">-</a>
+              <h1>1</h1>
+              <a href="#">+</a>
+            </div>
+            <div class="card-bottom-right">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+          <button><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <!--end of single card-->
+        <!--single card-->
+        <div class="card">
+          <div class="card-top">
+            <h4>15% off</h4>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="card-img">
+            <img src="./images/top-products/img-2.png" alt="no image" />
+          </div>
+          <div class="card-info">
+            <p>Available(in stock)</p>
+            <h2>Cucumber</h2>
+            <h3>$12 <span>$15</span></h3>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <a href="#">-</a>
+              <h1>1</h1>
+              <a href="#">+</a>
+            </div>
+            <div class="card-bottom-right">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <!--end of single card-->
+        <!--single card-->
+        <div class="card">
+          <div class="card-top">
+            <h4>15% off</h4>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="card-img">
+            <img src="./images/top-products/img-3.png" alt="no image" />
+          </div>
+          <div class="card-info">
+            <p>Available(in stock)</p>
+            <h2>Hazelnuts filbert nut</h2>
+            <h3>$12 <span>$15</span></h3>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <a href="#">-</a>
+              <h1>1</h1>
+              <a href="#">+</a>
+            </div>
+            <div class="card-bottom-right">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <!--end of single card-->
+        <!--single card-->
+        <div class="card">
+          <div class="card-top">
+            <h4>15% off</h4>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="card-img">
+            <img src="./images/top-products/img-4.png" alt="no image" />
+          </div>
+          <div class="card-info">
+            <p>Available(in stock)</p>
+            <h2>Raw Broccoli</h2>
+            <h3>$12 <span>$15</span></h3>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <a href="#">-</a>
+              <h1>1</h1>
+              <a href="#">+</a>
+            </div>
+            <div class="card-bottom-right">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <!--end of single card-->
+        <!--single card-->
+        <div class="card last-card">
+          <div class="card-top">
+            <h4>15% off</h4>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="card-img">
+            <img src="./images/top-products/img-5.png" alt="no image" />
+          </div>
+          <div class="card-info">
+            <p>Available(in stock)</p>
+            <h2>Organic quince</h2>
+            <h3>$12 <span>$15</span></h3>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <a href="#">-</a>
+              <h1>1</h1>
+              <a href="#">+</a>
+            </div>
+            <div class="card-bottom-right">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+          <button><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <!--end of single card-->
+      </div>
+    </section>
+    <section class="values center">
+      <div class="section-title">
+        <h2>offers</h2>
+        <h1>best values</h1>
+      </div>
+      <div class="value-cards">
+        <!--single card-->
+        <div class="value-card">
+          <img src="./images/values/value-1.png" alt="image" />
+          <div class="value-info">
+            <h1>daily essentials</h1>
+            <h2>20% off everyday</h2>
+            <a href="#">shop now</a>
+          </div>
+        </div>
+        <!--end of single card-->
+        <!--single card-->
+        <div class="value-card">
+          <img src="./images/values/value-2.png" alt="image" />
+          <div class="value-info">
+            <h1 id="value-uppercase">get up to</h1>
+            <h2>30% off</h2>
+            <a href="#">shop now</a>
+          </div>
+        </div>
+        <!--end of single card-->
+        <!--single card-->
+        <div class="value-card">
+          <img src="./images/values/value-3.png" alt="image" />
+          <div class="value-info">
+            <h1>special discount</h1>
+            <h2>for all items</h2>
+            <a href="#">shop now</a>
+          </div>
+        </div>
+        <!--end of single card-->
+      </div>
+    </section>
+    <section class="cashback center">
+      <h1>Get $5 Cashback! Min Order of $50</h1>
+      <a href="#">USE CODE : COMBOSUPERR2a</a>
+    </section>
+    <section class="top-vegetables center">
+      <div class="section-title">
+        <h2>for you</h2>
+        <h1>top vegetables & fruits products</h1>
+      </div>
+      <div class="top-product-cards">
+        <!--single card-->
+        <div class="card first-card">
+          <div class="card-top">
+            <h4>15% off</h4>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="card-img">
+            <img src="./images/top-vegetables/veg-1.png" alt="no image" />
+          </div>
+          <div class="card-info">
+            <p>Available(in stock)</p>
+            <h2>Red apple</h2>
+            <h3>$12 <span>$15</span></h3>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <a href="#">-</a>
+              <h1>1</h1>
+              <a href="#">+</a>
+            </div>
+            <div class="card-bottom-right">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+          <button><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <!--end of single card-->
+        <!--single card-->
+        <div class="card">
+          <div class="card-top">
+            <h4>15% off</h4>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="card-img">
+            <img src="./images/top-vegetables/veg-2.png" alt="no image" />
+          </div>
+          <div class="card-info">
+            <p>Available(in stock)</p>
+            <h2>Capsicum-green</h2>
+            <h3>$12 <span>$15</span></h3>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <a href="#">-</a>
+              <h1>1</h1>
+              <a href="#">+</a>
+            </div>
+            <div class="card-bottom-right">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <!--end of single card-->
+        <!--single card-->
+        <div class="card">
+          <div class="card-top">
+            <h4>15% off</h4>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="card-img">
+            <img src="./images/top-vegetables/veg-3.png" alt="no image" />
+          </div>
+          <div class="card-info">
+            <p>Available(in stock)</p>
+            <h2>Pear fruit</h2>
+            <h3>$12 <span>$15</span></h3>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <a href="#">-</a>
+              <h1>1</h1>
+              <a href="#">+</a>
+            </div>
+            <div class="card-bottom-right">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <!--end of single card-->
+        <!--single card-->
+        <div class="card">
+          <div class="card-top">
+            <h4>15% off</h4>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="card-img">
+            <img src="./images/top-vegetables/veg-4.png" alt="no image" />
+          </div>
+          <div class="card-info">
+            <p>Available(in stock)</p>
+            <h2>Blueberry</h2>
+            <h3>$12 <span>$15</span></h3>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <a href="#">-</a>
+              <h1>1</h1>
+              <a href="#">+</a>
+            </div>
+            <div class="card-bottom-right">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <!--end of single card-->
+        <!--single card-->
+        <div class="card last-card">
+          <div class="card-top">
+            <h4>15% off</h4>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="card-img">
+            <img src="./images/top-vegetables/veg-5.png" alt="no image" />
+          </div>
+          <div class="card-info">
+            <p>Available(in stock)</p>
+            <h2>Fresh raspberry</h2>
+            <h3>$12 <span>$15</span></h3>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <a href="#">-</a>
+              <h1>1</h1>
+              <a href="#">+</a>
+            </div>
+            <div class="card-bottom-right">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+          <button><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <!--end of single card-->
+      </div>
+    </section>
+    <section class="new-products center">
+      <div class="section-title">
+        <h2>for you</h2>
+        <h1>added new products</h1>
+      </div>
+      <div class="top-product-cards">
+        <!--single card-->
+        <div class="card first-card">
+          <div class="card-top">
+            <h4>15% off</h4>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="card-img">
+            <img src="./images/new-products/1.png" alt="no image" />
+          </div>
+          <div class="card-info">
+            <p>Available(in stock)</p>
+            <h2>Ginger</h2>
+            <h3>$12 <span>$15</span></h3>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <a href="#">-</a>
+              <h1>1</h1>
+              <a href="#">+</a>
+            </div>
+            <div class="card-bottom-right">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+          <button><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <!--end of single card-->
+        <!--single card-->
+        <div class="card">
+          <div class="card-top">
+            <h4>15% off</h4>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="card-img">
+            <img src="./images/new-products/2.png" alt="no image" />
+          </div>
+          <div class="card-info">
+            <p>Available(in stock)</p>
+            <h2>Two fresh figs</h2>
+            <h3>$12 <span>$15</span></h3>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <a href="#">-</a>
+              <h1>1</h1>
+              <a href="#">+</a>
+            </div>
+            <div class="card-bottom-right">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <!--end of single card-->
+        <!--single card-->
+        <div class="card">
+          <div class="card-top">
+            <h4>15% off</h4>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="card-img">
+            <img src="./images/new-products/3.png" alt="no image" />
+          </div>
+          <div class="card-info">
+            <p>Available(in stock)</p>
+            <h2>Strawberry</h2>
+            <h3>$12 <span>$15</span></h3>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <a href="#">-</a>
+              <h1>1</h1>
+              <a href="#">+</a>
+            </div>
+            <div class="card-bottom-right">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <!--end of single card-->
+        <!--single card-->
+        <div class="card">
+          <div class="card-top">
+            <h4>15% off</h4>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="card-img">
+            <img src="./images/new-products/4.png" alt="no image" />
+          </div>
+          <div class="card-info">
+            <p>Available(in stock)</p>
+            <h2>Eggplant</h2>
+            <h3>$12 <span>$15</span></h3>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <a href="#">-</a>
+              <h1>1</h1>
+              <a href="#">+</a>
+            </div>
+            <div class="card-bottom-right">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <!--end of single card-->
+        <!--single card-->
+        <div class="card last-card">
+          <div class="card-top">
+            <h4>15% off</h4>
+            <a href="#"><i class="far fa-heart"></i></a>
+          </div>
+          <div class="card-img">
+            <img src="./images/new-products/5.png" alt="no image" />
+          </div>
+          <div class="card-info">
+            <p>Available(in stock)</p>
+            <h2>Egg</h2>
+            <h3>$12 <span>$15</span></h3>
+          </div>
+          <div class="card-bottom">
+            <div class="card-bottom-left">
+              <a href="#">-</a>
+              <h1>1</h1>
+              <a href="#">+</a>
+            </div>
+            <div class="card-bottom-right">
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+          </div>
+          <button><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <!--end of single card-->
+      </div>
+    </section>
+    <footer class="footer">
+      <section class="footer-section center">
+        <div class="footer-left">
+          <div class="column-1">
+            <img src="./images/footer-logo.png" alt="image" />
+            <p>Address: 60-49 Road 11378 New York</p>
+            <p>Phone: +65 11.188.888</p>
+            <p>Email: hello@colorlib.com</p>
+          </div>
+          <div class="column-2">
+            <h1>useful links</h1>
+            <a href="#">About us</a>
+            <a href="#">About our shop</a>
+            <a href="#">Delivery information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Our Sitemap</a>
+          </div>
+          <div class="column-3">
+            <a href="#">home</a>
+            <a href="#">product</a>
+            <a href="#">contact</a>
+            <a href="#">stores</a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="app-links">
+            <h1>download app</h1>
+            <div class="app-logos">
+              <a href="#"
+                ><img src="./images/app-links/appstore.png" alt="image"
+              /></a>
+              <a href="#"
+                ><img src="./images/app-links/googleplay.png" alt="image"
+              /></a>
+            </div>
+          </div>
+          <form action="" class="footer-form">
+            <label for="email"><h1>Sign Up for Our Newsletter</h1></label>
+            <div>
+              <input
+                type="email"
+                placeholder="enter email address"
+                name="email"
+                id="email"
+              />
+              <button type="submit">subscribe</button>
+            </div>
+          </form>
+          <div class="payment">
+            <h1>Payment method</h1>
+            <a href="#"><img src="./images/payment/Visa-light.png" alt="" /></a>
+            <a href="#"
+              ><img src="./images/payment/MasterCard-light.png" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./images/payment/Maestro-light.png" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./images/payment/Cirrus-light.png" alt=""
+            /></a>
+            <a href="#"
+              ><img src="./images/payment/AmericanExpress-light.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+      <section class="footer-bottom center">
+        <h3>
+          Copyright ©2021 All rights reserved | This template is made with 💚 by
+          LOGO
+        </h3>
+      </section>
+    </footer>
+  </body>
+</html>
