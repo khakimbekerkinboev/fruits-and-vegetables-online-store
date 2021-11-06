@@ -809,6 +809,7 @@ Top Products
   .top-product-cards {
     justify-content: center;
     column-gap: 5rem;
+    overflow: hidden;
   }
   .top-product-cards .right-btn {
     right: 1rem;
