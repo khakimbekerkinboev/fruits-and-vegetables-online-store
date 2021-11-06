@@ -89,6 +89,7 @@ Logo
   outline: none;
   font-weight: 500;
 }
+
 .search {
   color: #999999;
   background: #f7f7f7;
@@ -167,6 +168,7 @@ Logo
   border: transparent;
   outline: none;
 }
+
 /* 
 =============
 Navbar
@@ -224,7 +226,7 @@ Navbar
   column-gap: 0.56rem;
   color: white;
   background: #7fad39;
-  padding: 0.9rem;
+  padding: 0.8rem;
 }
 .nav-right select {
   background: #7fad39;
@@ -234,10 +236,10 @@ Navbar
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: 600;
+  position: relative;
 }
 .nav-right option {
-  background: white;
-  color: black;
+  font-weight: 600;
 }
 /* 
 =============
@@ -292,7 +294,7 @@ Hero Cards
   font-weight: 700;
   background: #7fad39;
   color: white;
-  padding: 1rem;
+  padding: 0.8rem;
   position: absolute;
   bottom: 0.825rem;
   right: 0.825rem;
@@ -319,6 +321,7 @@ Category Cards
   font-size: 1.5rem;
   text-transform: capitalize;
 }
+
 .c-cards span {
   background: white;
   display: flex;
@@ -338,10 +341,11 @@ Category Cards
   text-decoration: none;
   color: black;
 }
-.first-card {
+
+.right-left-btn {
   position: relative;
 }
-.first-card button {
+.left-btn {
   position: absolute;
   top: 50%;
   left: 0;
@@ -354,11 +358,10 @@ Category Cards
   font-weight: bold;
   background: white;
   border-radius: 50%;
+  z-index: 2;
 }
-.last-card {
-  position: relative;
-}
-.last-card button {
+
+.right-btn {
   position: absolute;
   top: 50%;
   right: 0;
@@ -372,7 +375,7 @@ Category Cards
   background: white;
   border-radius: 50%;
 }
-/* 
+/*
 ==============
 Top Products
 ==============
@@ -515,7 +518,7 @@ Values
   background: #2a2a2a;
   color: #ffffff;
   font-weight: 500;
-  padding: 0.9rem 1.25rem;
+  padding: 0.8rem 1.2rem;
 }
 /* 
 ==============
@@ -663,4 +666,226 @@ Footer
 .footer-bottom h3 {
   font-size: 0.825rem;
   font-weight: 600;
+}
+/* 
+==============
+Small Screen 
+==============
+*/
+@media screen and (max-width: 480px) {
+  .center {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  /* 
+=============
+Top
+=============
+*/
+
+  .shipping {
+    display: none;
+  }
+  .top {
+    justify-content: space-between;
+  }
+  .top-mail {
+    margin-left: 5vw;
+    border-right: none;
+  }
+  .top-icons {
+    margin-right: 5vw;
+  }
+  /* 
+=============
+Logo
+=============
+*/
+  .logo-center {
+    position: relative;
+  }
+  .location {
+    display: none;
+  }
+  .logo-left {
+    flex-direction: column;
+    row-gap: 1rem;
+    align-items: flex-start;
+  }
+  .logo-right {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .search {
+    padding: 0.68rem auto 0.75rem 0.81rem;
+  }
+  .search input {
+    width: 100%;
+  }
+  .phone-number {
+    display: none;
+  }
+  .logo-like {
+    display: none;
+  }
+  .profile {
+    border-left: none;
+    padding-left: 0;
+    padding-top: 0.3rem;
+  }
+  /* 
+=============
+Navbar
+=============
+*/
+  .categories {
+    display: none;
+  }
+  .navbar-center {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .nav-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0;
+    row-gap: 0.3rem;
+  }
+  /* 
+=============
+Hero Cards
+=============
+*/
+
+  .single-card {
+    width: 100%;
+    border: none;
+  }
+  .single-card img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .section-title {
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* 
+==============
+Category Cards
+==============
+*/
+  .c-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .first-card button {
+    display: none;
+  }
+  .last-card button {
+    display: none;
+  }
+  .third-card {
+    position: relative;
+  }
+  .third-card button {
+    display: block;
+  }
+  .fourth-card button {
+    display: block;
+  }
+
+  .c-cards span {
+    width: 100%;
+  }
+  /*
+==============
+Top Products
+==============
+*/
+  .top-product-cards {
+    justify-content: center;
+    column-gap: 5rem;
+  }
+  .top-product-cards .right-btn {
+    right: 1rem;
+  }
+  .top-product-cards .left-btn {
+    left: 1rem;
+  }
+  /* 
+==============
+Values
+==============
+*/
+  .value-cards {
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  .value-card {
+    width: 100%;
+  }
+  /* 
+==============
+Cashback
+==============
+*/
+  .cashback {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  /* 
+==============
+Footer
+==============
+*/
+  .new-products {
+    margin-bottom: 5rem;
+  }
+  .footer {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .footer-section {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+  .column-1 {
+    padding-top: 0.5rem;
+  }
+  .column-1 img {
+    margin-bottom: 0.6rem;
+  }
+  .column-3 {
+    display: none;
+  }
+  .footer-left {
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 1rem;
+  }
+  .footer-right {
+    max-width: 100%;
+  }
+  .app-logos {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-form div {
+    height: 2.5rem;
+  }
+  .footer-form input {
+    padding: 1rem 2rem 1rem 1rem;
+  }
+  .footer-form button {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .footer-section {
+    padding-bottom: 3rem;
+  }
 }
