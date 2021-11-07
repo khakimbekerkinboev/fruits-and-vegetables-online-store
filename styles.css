@@ -706,6 +706,9 @@ Small Screen
 ==============
 */
 @media screen and (max-width: 480px) {
+  html {
+    overflow-x: hidden;
+  }
   .center {
     max-width: 90vw;
     margin: 0 auto;
@@ -852,6 +855,7 @@ Values
     justify-content: center;
     overflow: hidden;
     margin-bottom: 2rem;
+    column-gap: 2rem;
   }
   .value-card {
     width: 100%;
