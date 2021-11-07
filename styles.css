@@ -25,6 +25,9 @@ Top
 =============
 */
 .top {
+  background: #2a2a2a;
+}
+.top .center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -712,20 +715,16 @@ Small Screen
 Top
 =============
 */
-
   .shipping {
     display: none;
   }
-  .top {
+  .top .center {
     justify-content: space-between;
   }
   .top-mail {
-    margin-left: 5vw;
     border-right: none;
   }
-  .top-icons {
-    margin-right: 5vw;
-  }
+
   /* 
 =============
 Logo
