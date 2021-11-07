@@ -11,6 +11,14 @@ body {
   max-width: 90vw;
   margin: 0 auto;
 }
+.btn {
+  transition: all 300ms linear;
+}
+.btn:hover {
+  color: white;
+  background: #8fd328;
+}
+
 /* 
 =============
 Top
@@ -215,7 +223,12 @@ Navbar
   color: #2a2a2a;
   font-size: 1rem;
   font-weight: 500;
+  transition: all 300ms linear;
 }
+.nav-list a:hover {
+  color: #8fd328;
+}
+
 .nav-list .home-page {
   color: #7fad39;
   font-weight: 600;
@@ -229,7 +242,6 @@ Navbar
   padding: 0.8rem;
 }
 .nav-right select {
-  background: #7fad39;
   color: white;
   border: transparent;
   outline: none;
@@ -237,6 +249,7 @@ Navbar
   font-size: 0.75rem;
   font-weight: 600;
   position: relative;
+  background: inherit;
 }
 .nav-right option {
   font-weight: 600;
@@ -293,12 +306,13 @@ Hero Cards
   font-size: 0.875rem;
   font-weight: 700;
   background: #7fad39;
-  color: white;
-  padding: 0.8rem;
+  color: #f7f7f7;
+  padding: 0.65rem;
   position: absolute;
   bottom: 0.825rem;
   right: 0.825rem;
 }
+
 /* 
 ==============
 Category Cards
@@ -322,7 +336,7 @@ Category Cards
   text-transform: capitalize;
 }
 
-.c-cards span {
+.category-card {
   background: white;
   display: flex;
   flex-direction: column;
@@ -333,8 +347,13 @@ Category Cards
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.06);
   padding-top: 1.1rem;
   padding-bottom: 1.1rem;
+  transition: all 0.3s linear;
+  text-decoration: none;
 }
-.c-cards a {
+.category-card:hover {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.c-cards h1 {
   font-size: 0.85rem;
   font-weight: 700;
   margin-top: 1rem;
@@ -518,7 +537,11 @@ Values
   background: #2a2a2a;
   color: #ffffff;
   font-weight: 500;
-  padding: 0.8rem 1.2rem;
+  padding: 0.7rem 1.1rem;
+  transition: all 300ms linear;
+}
+.value-info a:hover {
+  background: #000000;
 }
 /* 
 ==============
@@ -542,12 +565,17 @@ Cashback
   text-decoration: none;
   font-size: 0.825rem;
   font-weight: 700;
-  color: white;
+  color: #f7f7f7;
   background: #7fad39;
-  padding: 0.75rem 2rem;
+  padding: 0.7rem 2rem;
   text-transform: uppercase;
   border: 2px dashed #ffffff;
+  transition: all 300ms linear;
 }
+.cashback-btn:hover {
+  background: #8fd328;
+}
+
 /* 
 ==============
 New Products
@@ -659,7 +687,9 @@ Footer
   height: 100%;
   padding-right: 2rem;
   padding-left: 2rem;
+  transition: all 300ms linear;
 }
+
 .payment a {
   margin-right: 0.625rem;
 }
@@ -754,6 +784,7 @@ Navbar
     column-gap: 0;
     row-gap: 0.3rem;
   }
+
   /* 
 =============
 Hero Cards
@@ -781,13 +812,9 @@ Category Cards
   .c-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
   }
-  .first-card button {
-    display: none;
-  }
-  .last-card button {
-    display: none;
-  }
+
   .third-card {
     position: relative;
   }
@@ -798,7 +825,7 @@ Category Cards
     display: block;
   }
 
-  .c-cards span {
+  .c-cards a {
     width: 100%;
   }
   /*
