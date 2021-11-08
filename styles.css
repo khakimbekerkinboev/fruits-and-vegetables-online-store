@@ -906,15 +906,24 @@ Footer
     flex-direction: column;
     align-items: flex-start;
   }
+  .footer-form {
+    max-width: 100%;
+    width: inherit;
+  }
   .footer-form div {
     height: 2.5rem;
+    max-width: 100%;
   }
   .footer-form input {
-    padding: 1rem 2rem 1rem 1rem;
+    padding: 1rem;
+    padding-right: 0.5rem;
+  }
+  #email textarea {
+    width: 100%;
   }
   .footer-form button {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
   }
   .footer-section {
     padding-bottom: 3rem;
