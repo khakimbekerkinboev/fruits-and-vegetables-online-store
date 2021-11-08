@@ -231,6 +231,9 @@ Navbar
 .nav-list a:hover {
   color: #8fd328;
 }
+.nav-list a.home-page:hover {
+  color: #7fad39;
+}
 
 .nav-list .home-page {
   color: #7fad39;
@@ -918,9 +921,7 @@ Footer
     padding: 1rem;
     padding-right: 0.5rem;
   }
-  #email textarea {
-    width: 100%;
-  }
+
   .footer-form button {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
